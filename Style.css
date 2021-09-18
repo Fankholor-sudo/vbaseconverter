@@ -1,0 +1,709 @@
+            *{
+                margin:0px;
+                padding:0px;
+                font-size:95.8%;
+            }
+            html{
+                overflow-y: scroll;
+                overflow-x:hidden;
+            }
+            @keyframes color-me-in {
+                0%  {background: #E9EAC6;}
+                50% {background: #E9EAC6;}
+                60% {background: rgb(184, 187, 163);}
+                70% {background: rgb(173, 175, 157);}
+                100%{background: #E9EAC6;}
+            }
+            .MainPage{
+                margin-left:20px;
+                margin-right:20px;
+                height: auto;
+                overflow-x:hidden;
+            }
+            .Thenav{
+                display: none;
+            }
+            .main_body{
+                background: #E9EAC6;
+                animation: color-me-in 30s infinite;
+                position: relative;
+            }
+            .navi{
+                display: flex;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #B2BB87;
+                height: 50px;
+                margin:0px;
+
+            }
+            .burger{
+                position: relative;
+                cursor: pointer;
+            }
+            .burger div{
+                background-color: black ;
+                margin: 2px;
+                width: 30px;
+                height: 2.5px;
+                transition: all 0.45s ease;
+            }
+            .toggle .line1{
+                transform: rotate(-45deg) translate(-3px, 5px);
+                background-color: red;
+            }
+            .toggle .line2{
+                opacity: 0;
+            }
+            .toggle .line3{
+                transform: rotate(45deg) translate(-3px, -5px);
+                background-color: blue;
+            }
+
+           .List li{
+                list-style: none;
+                padding: 35%;
+                opacity: 0;
+            }
+            @keyframes ListFade{
+                from{
+                    opacity:0;
+                    transform: translateX(100px);
+                }
+                to{
+                    opacity:1;
+                    transform: translateX(0px);
+                }
+            }
+           .List a{
+                text-decoration: none;
+                color:rgb(173, 175, 157);
+                font-weight: bold;
+                font-family: serif;
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+            .List .top a:hover{
+                color: #47501A;
+                padding-top:50%;
+                padding-left:40%;
+                padding-right:50%;
+                padding-bottom:50%;
+                background-color: rgb(173, 175, 157);
+            }
+            .List .mid a:hover{
+                color:  rgb(173, 175, 157);
+                padding-top:50%;
+                padding-left:40%;
+                padding-right:50%;
+                padding-bottom:50%;
+                background-color: #47501A;;
+            }
+            .List .last a:hover{
+                color: #47501A;
+                padding-top:50%;
+                padding-left:30%;
+                padding-right:41%;
+                padding-bottom:50%;
+                background-color: rgb(173, 175, 157);
+            }
+            .List{
+                position: fixed;
+                top: 0;
+                display: block;
+                background: #47501A ;
+                margin-top: 44px;
+                width:30%;
+                height:700px;
+                transform: translateX(400%);
+                transition: transform 0.6s ease-in;
+                border-radius: 50%;
+            }
+            .nav-active{
+                transform: translateX(250%);
+            }
+            .List .top{
+                background: #47501A;
+                padding-left:12px;
+            }
+            .List .mid {
+                background: #B2BB87;
+                padding-left:12px;
+            }
+            .List .mid a{
+                color: black;
+            }
+            .List .last{
+                background: #47501A;
+                padding-left:12px;
+            }
+            .one_line{
+                text-align-last: center;
+                height: 180px;
+                padding-top: 40px;
+                width:100%;
+                background-color:#ECF2F1;
+            }
+            .myTAb{
+                margin-bottom:10px;
+            }
+           .one_line .logo_transp{
+                padding-top: 30px;
+            }
+            .one_line .image_here{
+                width: 15%;
+                height: auto;
+                min-height:150px;
+                margin: auto;
+                background-image: url(./logo_transp.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: local;
+                backface-visibility: hidden;
+                background-size: cover;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+
+            .main.solution_block{
+                background: #E9EAC6;
+                margin-left: 10px;
+                margin-right: 10px;
+                animation: color-me-in 30s infinite;
+                height: 120px;
+            }
+            .main.inputBox{
+                /* background:#95A547; */
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 210px;
+                border-radius: 8px;
+            }
+            .main.inputBox div{
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 0px;
+                display: block;
+                padding-bottom: 15px;
+            }
+            .valNum{
+                background:#AAB37E;
+                padding-top:5px;
+            }
+            .main.inputBox .divBase{
+                background:#A4AC7C;
+                display:flex;
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+            }
+           .valConvert{
+               background:#A1A975;
+            }
+            .inputnumber{
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 250px;
+                font-size: 20px;
+                height: 15px;
+                border-radius: 4px;
+                border-color: #f4f5d1;
+            }
+            .firstBase{
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 50px;
+                font-size: 20px;
+                height: 15px;
+                border-radius: 4px;
+                border-color: #f4f5d1;
+            }
+            .secondBase{
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 50px;
+                font-size: 20px;
+                height: 15px;
+                border-radius: 4px;
+                border-color: #f4f5d1;
+            }
+            .button{
+                width: 80px;
+                height: 40px;
+                background-color: #dfdfdf;
+                color: #121212;
+                text-align: center;
+                border-radius: 4px;
+                cursor: pointer;
+                border: none;
+            }
+
+            .Custom{
+                margin-top: 10px;
+            }
+            .Custom .char{
+                width: 300px;
+                height: 60px;
+            }
+            .Custom_note{
+                color: rgba(0,70,200,50%);
+                font-weight: 1000;
+            }
+
+            .Article{
+                padding-top:20px;
+                color: rgba(0,0,0,50%);
+                padding-bottom: 30px;
+            }
+            .Article p{
+                font-size: 12px;
+                font-family: serif;
+            }
+            .Article h2{
+                font-size: 18px;
+                font-weight: 800;
+				margin-bottom: -0.9em;
+            }
+
+            /*----------------------THE BEGINING OF OUR FOOTER------------------------------*/
+            footer{
+                width: 100%;
+                height: auto;
+                background: black;
+                /* margin: 20px; */
+                background-size: cover;
+                overflow: hidden;
+                box-sizing: border-box;  
+            }
+
+            /*Social media icons*/
+            .footer-social-icons{
+                width: 100%;
+                height: auto;
+                margin-top:2%;
+            }
+            .footer-social-icons ul{
+                margin: auto;
+                padding: auto;
+                padding-left: 4.5%;
+            }
+            .footer-social-icons ul li{
+                display: inline-block;
+                margin-right: 2px;
+                text-align: center;
+            }
+            .footer-social-icons ul li a{
+                color: #fff;
+                display: block;
+                font-size: 30px;
+                text-shadow: 0px 0px 5px rgba(0 , 0 , 0 , 75);
+            }
+
+            .contact-container {
+                display: flex;
+                margin: 20px;
+            }
+
+            .first-section{
+                width: auto;
+                height: auto;
+            }
+            .flexing_call_heading{
+                display: flex;
+            }
+            .call-icon{
+                font-size: 14px;
+                color: white;
+                margin-right: 10px;
+            }
+            .call_number{
+                margin-top:10px;
+            }
+
+            .second-section{
+                width: auto;
+                height: auto;
+                text-align: start;
+            }
+            .second-section .item-link ul li a{
+                font-size: 14px;
+            }
+            .section-heading{
+                width: auto;
+                margin-bottom: 10px;
+                height: auto;
+            }
+            .section-heading h3{
+                font-size: 16px;
+                text-align: start;
+                color: #fff;
+                margin: 0px;
+            }
+
+            .first-section:hover a{
+                color:  rgba(0,255,255,.6);
+            }
+
+            .item{
+                width:auto;
+            }
+            .item+.item {
+                margin-left: 10%;
+            } 
+            /*second section in the footer(the middle division) on Our Services*/
+            .item-link{
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+            .item-link ul li{
+                list-style-type: none;
+                padding-top: 5px;
+            }
+            .item-link ul li a{
+                font-size: 17px;
+                color: #fff;
+                text-decoration: none;
+            }
+            .item-link ul li a:hover{
+                color: rgba(0,255,255,.6);
+                font-weight: 600;
+            }
+            
+            .fourth{
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+            .fourth .copyRight{
+                width: 100%;
+                height: auto;
+                margin: auto;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .fourth .copyRight p{
+                color: rgba(255,255,255,.8);
+                font-size: 13px;
+            }
+
+            .myTAb {
+                text-align: center;
+            }
+
+            #mytable {
+                padding: 10px 0px 30px 0px;
+            }
+
+            .myTAb label {
+                color: rgba(0,0,255,.5);
+                font-size: 15px;
+                font-weight: 900;
+            }
+            #mytable tr td {
+                position: relative;
+                text-align: left;
+                padding-left: 10px;
+                font-size: 15px;
+                font-family: monospace;
+                color: rgba(0,0,0,.5);
+            }
+
+            .hidden_solution {
+                display: none;
+            }
+
+            /*---------------BEGINS MEDIA SCREEN WITH MIN-WIDTH----------*/
+            @media only screen and (min-width: 0px) and (max-width:269.9px){
+                .footer-social-icons ul li{
+                    margin-left: 25px;
+                    width: 8%;
+                }
+                .one_line .image_here{
+                    width: 80%;
+                }
+                .footer-social-icons ul li a{
+                    font-size: 25px;
+                }
+                .MainPage{
+                    height: auto;
+                }
+                .Article p{
+                    font-size: 10px;
+                }
+                .inputnumber{
+                    width: 90%;
+                }
+                .firstBase{
+                    width: 50%
+                }
+                .secondBase{
+                    width:50%;
+                }
+                .baseOne{
+                    background: #ABB08C;
+                    border-radius:4px;
+                }
+                .baseTwo{
+                    background-color: #A4AC7C;
+                    border-radius:4px;
+                }
+                .main.inputBox .divBase{
+                    display:block;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .item{
+                    width: auto;
+                    height: auto;
+                }
+                
+                .myTAb {
+                    overflow-x: scroll;
+                }
+                #mytable tr td{
+                    padding-left: 5px;
+                    font-size: 11px;
+                    font-weight: 700;
+                }
+            }
+            @media only screen and (min-width: 270px) and (max-width:499px){
+                .inputnumber{
+                    width: 90%;
+                }
+                .one_line .image_here{
+                    width: 40%;
+                }
+                .footer-social-icons ul li{
+                    margin-left: 25px;
+                    width: 8%;
+                }
+                .footer-social-icons ul li a{
+                    font-size: 30px;
+                }
+                .Custom .char{
+                    width:280px;
+                }
+                .MainPage{
+                    height: auto;
+                }
+                .Article p{
+                    font-size: 12px;
+                }
+                .firstBase{
+                    width: 50%
+                }
+                .secondBase{
+                    width:50%;
+                }
+                .item{
+                    width: auto;
+                }
+                .myTAb {
+                    overflow-x: scroll;
+                }
+                #mytable tr td {
+                    padding-left: 5px;
+                    font-size: 13px;
+                    font-weight: 700;
+                }
+            }
+            @media only screen and (min-width: 500px){
+                *{
+                    font-size:15px;
+                    font-family: Helvetica ;
+                }
+                .footer-social-icons ul li{
+                    width:10%;
+                }
+                .MainPage{
+                    height: auto;
+                }
+                .Custom{
+                    margin-top:50px;
+                }
+                .Custom .char{
+                    margin-top:0px;
+                    width:280px;
+                }
+                .Article p{
+                    font-size: 14px;
+                }
+                .List{
+                    height:1700px;
+                }
+                .List a{
+                    font-size:13px;
+                }
+                .inputnumber{
+                    height:5px;
+                    width:60%;
+                    font-size:12px;
+                }
+                .firstBase{
+                    height:5px;
+                    width:20%;
+                    font-size:12px;
+                }
+                .secondBase{
+                    height:5px;
+                    width:20%;
+                    font-size:12px;
+                }
+               .baseOne{
+                    background: #ABB08C;
+                    border-radius:4px;
+                }
+                .baseTwo{
+                    background-color: #A4AC7C;
+                    border-radius:4px;
+                }
+                .button{
+                    width: 90px;
+                    height: 50px;
+                    font-weight:550;
+                }
+                .main.inputBox{
+                    height:190px;
+                }
+                .main.inputBox .divBase{
+                    display:block;
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                /*added*/
+
+                .item{
+                    width:auto;
+                }
+                #mytable tr td {
+                    padding-left: 5px;
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+            @media only screen and (min-width: 700px){
+                *{
+                    font-size:15px;
+                    font-family: Helvetica ;
+                }
+                .footer-social-icons{
+                    padding-left: 30%;
+                }
+                .footer-social-icons ul li{
+                    width:5%;
+                }
+                .Article p{
+                    font-size: 18px;
+                }
+                .Custom{
+                    margin-top:20px;
+                }
+                .Custom .char{
+                    width:500px;
+                }
+                .MainPage{
+                    height: auto;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                }
+                .navi{
+                    position: fixed;
+                    width: 100%;
+                }
+                .List{
+                    display: none;
+                }
+                .Thenav{
+                    display: flex;
+                    padding: 10px;
+                    width: 25%;
+                    justify-content: space-around;
+                }
+                .Thenav a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color:rgb(223, 224, 210);
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+                .Thenav a:hover{
+                    color: #47501A;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                }
+                .Thenav li{
+                    list-style: none;
+                }
+
+                .burger{
+                    display: none;
+                }
+                .valNum{
+                    padding-top:5px;
+                }
+                .inputnumber{
+                    width: 380px;
+                    font-size: 18px;
+                    margin-top: 0px;
+                }
+                .firstBase{
+                    width: 160px;
+                    font-size: 18px;
+                }
+                .baseOne{
+                    background: #ABB08C;
+                    border-radius:4px;
+                }
+                .baseTwo{
+                    background-color: #A4AC7C;
+                    border-radius:4px;
+                }
+                .secondBase{
+                    width: 160px;
+                    font-size: 18px;
+                }
+                .main.inputBox .divBase{
+                    display:block;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .main.inputBox{
+                    height: 240px;
+                }
+                .button{
+                    width: 100px;
+                    height: 50px;
+                    font-size: 16px;
+                    font-weight: 550;
+                    text-align: center;
+                }
+                .contact-container {
+                    display: flex;
+                    margin: 20px;
+                }
+                .item{
+                    width:auto;
+                }
+                .item+.item {
+                    margin-left: 10%;
+                } 
+                #mytable tr td {
+                    padding-left: 10px;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+

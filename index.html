@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Fankholoro Vincent">
+        <meta name="describtion" content="NumberConvertion from base 2(binary) to base 36, with the working(steps)">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="keywords" content="Online base converter, it converts any number in base(2,36) it support
+         fractions and decimal numbers, it also provides all the steps to the solution.
+         It makes it easy for you to convert Binary,HexaDecimal,Octal,...">
+        <title>Number-Base-Converter|vbaseconverter</title>
+        <link rel="icon" href="TheLogoVb.jpg">
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
+    <body class="main_body">
+            <section>
+                    <div class="one_line">
+                        <div class="logo_transp">
+                            <div class="image_here"></div>
+                        </div>
+                    </div>
+
+            </section>
+
+        <main class="MainPage">
+            <section>
+                <div class="oneline"></div>
+            </section>
+            <section class="myTAb">
+                <label class="solution-label"></label>
+                    <table id="mytable" class="mytable">
+                        <p class="error_message"></p>
+                        <tr class="first_row">
+                            <td class="col_one"></td>    
+                        </tr>
+                        <tr class="first_row">
+                            <td class="col_two"></td>
+                        </tr>
+
+                        <hr>
+                        
+                        <tr class="second_row">
+                            <td class="nxt_col_one"></td>
+                        </tr>
+                        <tr class="second_row">
+                            <td class="nxt_col_two"></td>
+                        </tr>
+                    </table>
+                    <div> 
+                        <p class="solution_link"></p>
+						<p class="hidden_solution"></p>
+                    </div>
+            </section>
+            <section>
+                <div class="main inputBox">
+                    <form>
+                        <div class="valNum">
+                            <label><b>Number</b></label><br>
+                            <input type="text" class="inputnumber" name="Value" maxlength="30" required>
+                        </div>
+                        <div class="divBase">
+                            <!-- <div class="baseOne">
+                                <label><b>From base</b></label><br>
+                                <input type="text" class="firstBase" name="fromBase" maxlength="2" required>
+                                
+                            </div> -->
+                            
+                            <div class="baseOne">
+                                <label><b>From base</label></b><br>
+                                <select class="firstBase" name="from-number" id="first_base">
+                                    <option value="2">base 2</option>
+                                    <option value="3">base 3</option>
+                                    <option value="4">base 4</option>
+                                    <option value="5">base 5</option>
+                                    <option value="6">base 6</option>
+                                    <option value="7">base 7</option>
+                                    <option value="8">base 8</option>
+                                    <option value="9">base 9</option>
+                                    <option selected value="10">base 10</option>
+                                </select>
+                            </div>
+
+                            <div class="baseTwo">
+                                <label><b>To base</b></label><br>
+                                <input type="text" class="secondBase" name="toBase" maxlength="2" required>
+                            </div>
+                        </div>
+                        <div class="valConvert">
+                            <input type="button" class="button" name="calculate" Value="convert"><br>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div class="Custom">
+                    <label><b>CustomCharacters</b></label><br>
+                    <input type="text" class="Custom char" name="CustomCharacters" value="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnoqrstuvwxyz">
+                </div>
+                <div class="Custom_note">
+                    <b>Note:</b><em> small letters replace caps letters.</em> 
+                </div>
+            </section>
+            <section>
+                <article class="Article">
+                    <div class="Article first">
+                        <h2>About the website.</h2><br>
+                        <p class="paragraph one">
+                        Online-Number-Base-Converter, it converts any number from base 2(binary),8(octal),10(decimal),16(hexadecimal)<br>
+                        to any base in ranging from base-2 to base-36, it also provides all the steps(workings) to the solution.It makes it easier<br>
+                        for you to convert Binary,Decimal,Octal,HexaDecimal,... and understand how it was done!.
+                        </p>
+                        <br>
+                        <h2>What is Base Conversion..?</h2><br>
+                        <p class="paragraph one">
+                            In mathematics, a base or radix is the number of different digits or combination of digits and letters that a system of<br>
+                            counting uses to represent numbers. For example, the most common base used today is the decimal(base-10) system<br>
+                            <b>Base Converter</b> is a number Conversion from one base to another. Almost everyone uses<br>
+                            <b>base-10</b> = {0,1,2,3,4,5,6,7,8,9} to count, of which is less complicated to use in mathematical arithmetics<br> 
+                            like <em>Addition, Subtraction, Multiplication and Division</em>.But note, we still have other bases that you can use<br>
+                            to do mathematical arithmetics and by practice they can be better to use and be as normal as base-10 is to you.<br>
+                        </p>
+                        <br>
+                        <h2>What is a Base..?</h2><br>
+                        <p class="paragraph two">
+                            <b>Base</b> it's a range of all values from 0 to the value that is less than the base with one(base-1)<br> e.g {0,1,2,3,...,base-1}
+                            in this case the base value is excluded, <b>base-10</b> has all the values less than 10,<br> <b>Base-5</b>={0,1,2,3,4} has all 
+                            values strictly less than 5, this means <b>base-2</b>={0,1}, ect...
+                        </p>
+                        <br>
+                        <h2>How do we present values greater or equal to 10..?</h2><br>
+                        <p class="paragraph three">
+                            When using bases we are not allowed to repeat values e.g <b>base-14</b>={0,1,2,3,..,10,11,12,13}<br> this will not be a correct 
+                            way of presenting values under <b>base14.</b> Consequently <b>Numeral mathematicians</b> <br>decided to introduce letters 
+                            in order to accommodate repeating numbers like {A,B,C,...Z} where<br> A=10,B=11,C=12,..,I=18,...,T=29,...,Z=35.
+                            Therefore the correct way of showing<br><b>Base-14</b> = {0,1,2,3,...9,A,B,C,D}. Hope you have realised that having Base-n
+                            simply means that we gonna<br> have n-elements including zero.<br>
+                            <b>Note:</b> You can go as much high as you would love to, as long you won't be repeating values, having in mind that A!=a , B!=a Z!=z etc.<br>
+                            This means <b>Base-72</b> can have {a,b,c,...z} where a=36, b=37, c=38 and z=71.  
+                        </p>
+                        <br>
+                        <h2>Commonly used Bases</h2><br>
+                        <p>
+                            We have 4 stand out Bases{2,8,10.16} where Base-2 is called <b>Binary</b>, Base-8 called <b>Octal</b> ,<br>Base-10 called <b>Decimal</b>
+                            and Base-16 called <b>HexaDecimal</b> which computers use for arithmetics<br>e.g Computer can only understand Binary(Base2).<br>
+                            Binary numbers are used in giving computer instructions since they can only understand it,<br>so the name given to the Programming
+                            language that only uses Binary numbers is called <b>LowLevel Programming Language</b><br>which can be used to develop Softwares and applications.<br> 
+                            But <em>LowLevel Programming Language</em> is hard to understand and is too complicated,<br>so with that being a problem they then introduced
+                           <em>high level programming</em> languages like C++, JAVA ,<br>C# , C , PYTHON , RUBY ,...,ext which made it easier to give a computer
+                            instructions with <em>english</em> like words.  
+                        </p>
+                    </div>
+                <article>
+            </section>
+        </main>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-social-icons">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/fankholora.vincent" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/FVincent945" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/fankholor_keys/" target="_blank" method="post"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:vincentsebothoma945@gmail.com" target="_blank" method="post"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCg80TP9p2Sxv1EXikEABMgA/" target="_blank" method="post"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                        <div class="contact-container">
+                            <div class="item">
+                                <div class="first-section">
+                                    <div class="section-heading"><h3>Contact us</h3></div>
+                                    <div class="contact-box one">
+                                        <div class="flexing_call_heading">
+                                            <div class="call-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                            <h5><span style="color:#fff; cursor:pointer;font-size:14px;">CALL:</span></h5>
+                                        </div>
+                                        <div class="call_number">
+                                            <p><a href="tel:+2774-828-3384">+2767-777-3060</a></p>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="second-section">
+                                    <div class="section-heading"><h3>More info...</h3></div>
+                                    <div class="item-link">
+                                        <ul>
+                                            <li><a href="#" method="POST" target="_blank">About Us</a></li>
+                                            <li><a href="https://www.vbaseconverter.co.za/">Give us a Feedback</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="fourth">
+                            <div class="copyRight">
+                                <p>Copyright &copy; 2019 VBaseConverter. All Rights Reserved.</p>
+                            </div>
+                        </div>    
+                </div>  
+            </footer>
+        <header>
+            <nav class="navi">
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="Thenav">
+                    <li class="top">
+                        <a href="https://www.vbaseconverter.co.za/">Home</a>
+                    </li>
+                    <li class="mid">
+                        <a href="https://www.google.com/search?sxsrf=ACYBGNR3trKB43fpsNIa3l3n0XbvbZYRSA%3A1580568082137&ei
+                        =Eo41XrGBCIbXgQaE8KnwCA&q=what+is+number+base+conversion+from+binary&oq=what+is+number+base+conversion
+                        +from+binary&gs_l=psy-ab.12..0i71l8.7689.8940..11454...0.2..0.0.0.......0....1..gws-wiz.lc-XaAmOoCs&ved
+                        =0ahUKEwix0tD4yrDnAhWGa8AKHQR4Co4Q4dUDCAs" method="POST" target="_blank">About</a>
+                    </li>
+                    <li class="last">
+                        <a href="mailto:vincentsebothoma945@gmail.com">Feedback</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr><hr><hr>
+            <asside>
+                <nav>
+                    <ul class="List">
+                        <li class="top">
+                            <a href="https://www.vbaseconverter.co.za/">Home</a>
+                        </li>
+                        <li class="mid">
+                            <a href="https://www.google.com/search?sxsrf=ACYBGNR3trKB43fpsNIa3l3n0XbvbZYRSA%3A1580568082137&ei
+                            =Eo41XrGBCIbXgQaE8KnwCA&q=what+is+number+base+conversion+from+binary&oq=what+is+number+base+conversion
+                            +from+binary&gs_l=psy-ab.12..0i71l8.7689.8940..11454...0.2..0.0.0.......0....1..gws-wiz.lc-XaAmOoCs&ved
+                            =0ahUKEwix0tD4yrDnAhWGa8AKHQR4Co4Q4dUDCAs" method="POST" target="_blank">About</a>
+                        </li>
+                        <li class="last">
+                            <a href="mailto:vincentsebothoma945@gmail.com">Feedback</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </header>
+        <script src="Converter.js"></script>
+        <script src="BaseConverter.js"></script>
+    </body>
+</html>
