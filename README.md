@@ -6,6 +6,7 @@ Number base converter with solutions.... (binary), (hexadecimal), (Decimal) and 
 Online-Number-Base-Converter, it converts any number from base 2(binary),8(octal),10(decimal),16(hexadecimal)
 to any base in ranging from base-2 to base-36, it also provides all the steps(workings) to the solution.It makes it easier
 for you to convert Binary,Decimal,Octal,HexaDecimal,... and understand how it was done!.
+Tech stack: CSS HTML5 JAVASCRIPT
 
 
 ### What is Base Conversion..?
