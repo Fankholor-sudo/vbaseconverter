@@ -1,5 +1,10 @@
 # vbaseconverter
-Number base converter with solutions.... (binary), (hexadecimal), (Decimal) and many more....
+It is a user-friendly website designed for seamless conversion between various number bases(binary, 
+decimal, hex,…). Developed with HTML, CSS, and Javascript, this tool allows users to effortlessly convert 
+binary numbers to and from other bases. The website provides real-time solutions, displaying the 
+step-by-step mathematical processes involved in the conversion, ensuring transparency and educational value. 
+Whether you're a student exploring number systems or a professional needing quick and accurate conversions, 
+VBaseConverter simplifies the process with its intuitive interface and interactive functionality.
 
 #### Created:  2019.
 #### Tech Stack: HTML5, JAVASCRIPT, CSS
